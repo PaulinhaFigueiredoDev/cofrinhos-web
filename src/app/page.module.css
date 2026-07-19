@@ -1,0 +1,30 @@
+.inicio {
+  display: grid;
+  min-height: 100dvh;
+  padding: 1.5rem;
+  place-items: center;
+}
+
+.inicio__conteudo {
+  width: min(100%, 32rem);
+}
+
+.inicio__etapa {
+  margin-block-end: 0.5rem;
+  color: #555;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.inicio__titulo {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.inicio__descricao {
+  margin-block-start: 1rem;
+  color: #444;
+  line-height: 1.6;
+}

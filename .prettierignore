@@ -1,0 +1,9 @@
+.next
+CONTRIBUTING.md
+coverage
+docs
+node_modules
+out
+playwright-report
+public/mockServiceWorker.js
+test-results

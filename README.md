@@ -14,7 +14,7 @@ O fluxo principal permite:
 - Acessar o detalhe de um cofrinho.
 - Retornar do detalhe para o Hub.
 
-## Tecnologias planejadas
+## Tecnologias
 
 - React
 - Next.js
@@ -25,6 +25,34 @@ O fluxo principal permite:
 - Vitest
 - React Testing Library
 - Playwright
+
+## Pré-requisitos
+
+- Node.js 24 ou superior
+- npm 11 ou superior
+
+## Instalação
+
+```bash
+npm install
+npm run dev
+```
+
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
+
+## Comandos
+
+| Comando                 | Finalidade                                   |
+| ----------------------- | -------------------------------------------- |
+| `npm run dev`           | Inicia o ambiente local                      |
+| `npm run build`         | Gera o build de produção                     |
+| `npm run lint`          | Executa o ESLint                             |
+| `npm run stylelint`     | Valida os arquivos CSS                       |
+| `npm run typecheck`     | Valida o TypeScript                          |
+| `npm run format:check`  | Confere a formatação                         |
+| `npm run test:run`      | Executa os testes com Vitest                 |
+| `npm run test:coverage` | Executa os testes com cobertura              |
+| `npm run test:e2e`      | Executa os testes no Chromium com Playwright |
 
 ## Qualidade
 
