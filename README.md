@@ -42,6 +42,10 @@ O projeto será desenvolvido considerando:
 
 🚧 Projeto em fase de especificação e configuração inicial.
 
+## Contribuição
+
+Consulte o [guia de contribuição](CONTRIBUTING.md) para conhecer os padrões de branches, commits, Pull Requests e merge adotados no projeto.
+
 ## Autora
 
 Desenvolvido por [Paulinha Figueiredo](https://github.com/PaulinhaFigueiredoDev).
