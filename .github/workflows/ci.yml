@@ -1,0 +1,65 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  install-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Setup npm
+        run: npm install --global npm@11.6.2
+
+      - name: Verify tool versions
+        run: |
+          node --version
+          npm --version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier (Format Check)
+        run: npm run format:check
+
+      - name: Run ESLint (Linter)
+        run: npm run lint
+
+      - name: Run Stylelint (CSS Linter)
+        run: npm run stylelint
+
+      - name: Run TypeScript (Type Check)
+        run: npm run typecheck
+
+      - name: Run Vitest (Unit Tests)
+        run: npm run test:run
+
+      - name: Restore Next.js Build Cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          # Gera uma chave baseada no SO e nos arquivos de configuração
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          # Se não achar a chave exata, recupera o cache mais recente disponível
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+
+      - name: Run Next.js Build
+        run: npm run build
