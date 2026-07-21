@@ -49,26 +49,26 @@ src/
 │           ├── page.tsx
 │           ├── loading.tsx
 │           └── not-found.tsx
-├── componentes/
-│   ├── atomos/
-│   ├── moleculas/
-│   ├── organismos/
+├── components/
+│   ├── atoms/
+│   ├── molecules/
+│   ├── organisms/
 │   └── templates/
-├── funcionalidades/
+├── features/
 │   └── cofrinhos/
-│       ├── dominio/
-│       ├── aplicacao/
-│       ├── infraestrutura/
-│       └── apresentacao/
-├── compartilhado/
-│   ├── estilos/
-│   ├── testes/
-│   └── utilitarios/
-└── simulacoes/
-    ├── dados.ts
+│       ├── domain/
+│       ├── application/
+│       ├── infrastructure/
+│       └── presentation/
+├── shared/
+│   ├── styles/
+│   ├── testing/
+│   └── utils/
+└── mocks/
+    ├── data.ts
     ├── handlers.ts
-    ├── navegador.ts
-    └── servidor.ts
+    ├── browser.ts
+    └── server.ts
 ```
 
 ## 5. Camadas e dependências

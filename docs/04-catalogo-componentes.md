@@ -1041,8 +1041,8 @@ Os componentes estruturais principais também devem passar por `vitest-axe`.
 ## 13. Estrutura de arquivos sugerida
 
 ```text
-src/componentes/
-├── atomos/
+src/components/
+├── atoms/
 │   ├── BotaoIcone/
 │   ├── BotaoVisibilidadeSaldo/
 │   ├── Divisor/
@@ -1052,7 +1052,7 @@ src/componentes/
 │   ├── TagCdi/
 │   ├── TituloSecao/
 │   └── ValorMonetario/
-├── moleculas/
+├── molecules/
 │   ├── AbaHistorico/
 │   ├── Atalho/
 │   ├── BotaoNovoCofrinho/
@@ -1062,7 +1062,7 @@ src/componentes/
 │   ├── IndicadorPaginacao/
 │   ├── ItemHistorico/
 │   └── LinhaRendimento/
-├── organismos/
+├── organisms/
 │   ├── CabecalhoDetalheCofrinho/
 │   ├── CardRecomendacao/
 │   ├── CarrosselRecomendacoes/
@@ -1077,7 +1077,7 @@ src/componentes/
 ├── templates/
 │   ├── TemplateDetalheCofrinho/
 │   └── TemplateHubCofrinhos/
-└── estados/
+└── states/
     ├── CarregamentoDetalhe/
     ├── CarregamentoHub/
     ├── EstadoCofrinhoNaoEncontrado/
