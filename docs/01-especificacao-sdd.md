@@ -259,19 +259,19 @@ Resposta `200`:
 Todos os componentes visuais são próprios.
 
 ```text
-componentes/
-├── atomos/
+components/
+├── atoms/
 │   ├── BotaoIcone
 │   ├── BotaoVisibilidadeSaldo
 │   ├── Divisor
 │   ├── Icone
 │   ├── ValorMonetario
 │   └── Skeleton
-├── moleculas/
+├── molecules/
 │   ├── HeaderNavegacao
 │   ├── CartaoCofrinho
 │   └── Atalho
-├── organismos/
+├── organisms/
 │   ├── ResumoCofrinhos
 │   ├── ListaCofrinhos
 │   └── ListaAtalhos
